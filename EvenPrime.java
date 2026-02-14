@@ -1,12 +1,12 @@
 public class EvenPrime {
     public static void main(String[] args) {
+        System.out.println("The Even Prime number are:");
         for(int i = 2; i <= 20; i++) {
             if(i % 2 == 0 && isPrime(i)) {
                 System.out.println(i);
             }
         }
     }
-
     static boolean isPrime(int n) {
         if(n < 2) return false;
         for(int i = 2; i <= Math.sqrt(n); i++) {
